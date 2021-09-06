@@ -1,0 +1,2400 @@
+[31-Aug-2021 10:20:59 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Illuminate\Database\QueryException'
+Message : 'SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ (SQL: select * from `student`)'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\vendor\illuminate\database\Connection.php(624): Illuminate\Database\Connection->runQueryCallback('select * from `...', Array, Object(Closure))
+#1 C:\xampp\htdocs\EducationalSystem\vendor\illuminate\database\Connection.php(333): Illuminate\Database\Connection->run('select * from `...', Array, Object(Closure))
+#2 C:\xampp\htdocs\EducationalSystem\vendor\illuminate\database\Query\Builder.php(2130): Illuminate\Database\Connection->select('select * from `...', Array, true)
+#3 C:\xampp\htdocs\EducationalSystem\vendor\illuminate\database\Query\Builder.php(2118): Illuminate\Database\Query\Builder->runSelect()
+#4 C:\xampp\htdocs\EducationalSystem\vendor\illuminate\database\Query\Builder.php(2604): Illuminate\Database\Query\Builder->Illuminate\Database\Query\{closure}()
+#5 C:\xampp\htdocs\EducationalSystem\vendor\illuminate\database\Query\Builder.php(2119): Illuminate\Database\Query\Builder->onceWithColumns(Array, Object(Closure))
+#6 C:\xampp\htdocs\EducationalSystem\vendor\illuminate\database\Eloquent\Builder.php(521): Illuminate\Database\Query\Builder->get(Array)
+#7 C:\xampp\htdocs\EducationalSystem\vendor\illuminate\database\Eloquent\Builder.php(505): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#8 C:\xampp\htdocs\EducationalSystem\vendor\illuminate\database\Eloquent\Model.php(462): Illuminate\Database\Eloquent\Builder->get(Array)
+#9 C:\xampp\htdocs\EducationalSystem\App\Controllers\HomeController.php(17): Illuminate\Database\Eloquent\Model::all()
+#10 [internal function]: App\Controllers\HomeController->index()
+#11 C:\xampp\htdocs\EducationalSystem\Core\Router.php(61): call_user_func_array(Array, Array)
+#12 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('')
+#13 {main}
+Url Error: /
+Thrown in 'C:\xampp\htdocs\EducationalSystem\vendor\illuminate\database\Connection.php' on line 664
+
+[31-Aug-2021 10:51:32 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'ErrorException'
+Message : 'Undefined index: fname (View: C:\xampp\htdocs\EducationalSystem\App\Views\Pages\Edit\Student.blade.php)'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\vendor\illuminate\view\Engines\PhpEngine.php(45): Illuminate\View\Engines\CompilerEngine->handleViewException(Object(ErrorException), 1)
+#1 C:\xampp\htdocs\EducationalSystem\vendor\illuminate\view\Engines\CompilerEngine.php(59): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\xampp\\htdocs...', Array)
+#2 C:\xampp\htdocs\EducationalSystem\vendor\illuminate\view\View.php(142): Illuminate\View\Engines\CompilerEngine->get('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\EducationalSystem\vendor\illuminate\view\View.php(125): Illuminate\View\View->getContents()
+#4 C:\xampp\htdocs\EducationalSystem\vendor\illuminate\view\View.php(90): Illuminate\View\View->renderContents()
+#5 C:\xampp\htdocs\EducationalSystem\Core\View.php(28): Illuminate\View\View->render()
+#6 C:\xampp\htdocs\EducationalSystem\App\Controllers\HomeController.php(49): Core\View::blade_render('Pages.Edit.Stud...')
+#7 [internal function]: App\Controllers\HomeController->studentedit()
+#8 C:\xampp\htdocs\EducationalSystem\Core\Router.php(61): call_user_func_array(Array, Array)
+#9 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('student/edit')
+#10 {main}
+Url Error: /student/edit&id=85&fname=%D9%85%D8%AD%D9%85%D8%AF%DA%A9%D8%A7%D8%B8%D9%85&lname=%D8%A8%D8%AD%D8%B1%D8%A7%D9%86%DB%8C%20%D9%BE%D9%88%D8%B1&Age=18
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Storage\views\e140c0ac095d0dad6c2bd9d67f76ce68159a0f5e.php' on line 65
+
+[31-Aug-2021 10:51:36 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'ErrorException'
+Message : 'Undefined index: fname (View: C:\xampp\htdocs\EducationalSystem\App\Views\Pages\Edit\Student.blade.php)'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\vendor\illuminate\view\Engines\PhpEngine.php(45): Illuminate\View\Engines\CompilerEngine->handleViewException(Object(ErrorException), 1)
+#1 C:\xampp\htdocs\EducationalSystem\vendor\illuminate\view\Engines\CompilerEngine.php(59): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\xampp\\htdocs...', Array)
+#2 C:\xampp\htdocs\EducationalSystem\vendor\illuminate\view\View.php(142): Illuminate\View\Engines\CompilerEngine->get('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\EducationalSystem\vendor\illuminate\view\View.php(125): Illuminate\View\View->getContents()
+#4 C:\xampp\htdocs\EducationalSystem\vendor\illuminate\view\View.php(90): Illuminate\View\View->renderContents()
+#5 C:\xampp\htdocs\EducationalSystem\Core\View.php(28): Illuminate\View\View->render()
+#6 C:\xampp\htdocs\EducationalSystem\App\Controllers\HomeController.php(49): Core\View::blade_render('Pages.Edit.Stud...')
+#7 [internal function]: App\Controllers\HomeController->studentedit()
+#8 C:\xampp\htdocs\EducationalSystem\Core\Router.php(61): call_user_func_array(Array, Array)
+#9 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('student/edit')
+#10 {main}
+Url Error: /student/edit&id=85&fname=%D9%85%D8%AD%D9%85%D8%AF%DA%A9%D8%A7%D8%B8%D9%85&lname=%D8%A8%D8%AD%D8%B1%D8%A7%D9%86%DB%8C%20%D9%BE%D9%88%D8%B1&Age=18
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Storage\views\e140c0ac095d0dad6c2bd9d67f76ce68159a0f5e.php' on line 65
+
+[31-Aug-2021 11:58:47 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'ErrorException'
+Message : 'Undefined index: HTTPS'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\App\Controllers\HomeController.php(23): Core\Error::errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 23, Array)
+#1 [internal function]: App\Controllers\HomeController->index()
+#2 C:\xampp\htdocs\EducationalSystem\Core\Router.php(61): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('')
+#4 {main}
+Url Error: /
+Thrown in 'C:\xampp\htdocs\EducationalSystem\App\Controllers\HomeController.php' on line 23
+
+[31-Aug-2021 14:22:40 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'ErrorException'
+Message : 'Undefined index: HTTP_REFERER'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\App\Controllers\HomeController.php(23): Core\Error::errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 23, Array)
+#1 [internal function]: App\Controllers\HomeController->index()
+#2 C:\xampp\htdocs\EducationalSystem\Core\Router.php(61): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('')
+#4 {main}
+Url Error: /
+Thrown in 'C:\xampp\htdocs\EducationalSystem\App\Controllers\HomeController.php' on line 23
+
+[31-Aug-2021 14:22:46 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'ErrorException'
+Message : 'Undefined index: HTTP_REFERER'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\App\Controllers\HomeController.php(23): Core\Error::errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 23, Array)
+#1 [internal function]: App\Controllers\HomeController->index()
+#2 C:\xampp\htdocs\EducationalSystem\Core\Router.php(61): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('')
+#4 {main}
+Url Error: /
+Thrown in 'C:\xampp\htdocs\EducationalSystem\App\Controllers\HomeController.php' on line 23
+
+[31-Aug-2021 14:22:52 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'ErrorException'
+Message : 'Undefined index: HTTP_REFERER'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\App\Controllers\HomeController.php(23): Core\Error::errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 23, Array)
+#1 [internal function]: App\Controllers\HomeController->index()
+#2 C:\xampp\htdocs\EducationalSystem\Core\Router.php(61): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('')
+#4 {main}
+Url Error: /
+Thrown in 'C:\xampp\htdocs\EducationalSystem\App\Controllers\HomeController.php' on line 23
+
+[31-Aug-2021 14:22:55 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'ErrorException'
+Message : 'Undefined index: HTTP_REFERER'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\App\Controllers\HomeController.php(23): Core\Error::errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 23, Array)
+#1 [internal function]: App\Controllers\HomeController->index()
+#2 C:\xampp\htdocs\EducationalSystem\Core\Router.php(61): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('')
+#4 {main}
+Url Error: /
+Thrown in 'C:\xampp\htdocs\EducationalSystem\App\Controllers\HomeController.php' on line 23
+
+[31-Aug-2021 14:23:03 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'ErrorException'
+Message : 'Undefined index: HTTP_REFERER'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\App\Controllers\HomeController.php(23): Core\Error::errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 23, Array)
+#1 [internal function]: App\Controllers\HomeController->index()
+#2 C:\xampp\htdocs\EducationalSystem\Core\Router.php(61): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('')
+#4 {main}
+Url Error: /
+Thrown in 'C:\xampp\htdocs\EducationalSystem\App\Controllers\HomeController.php' on line 23
+
+[31-Aug-2021 14:23:05 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'ErrorException'
+Message : 'Undefined index: HTTP_REFERER'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\App\Controllers\HomeController.php(23): Core\Error::errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 23, Array)
+#1 [internal function]: App\Controllers\HomeController->index()
+#2 C:\xampp\htdocs\EducationalSystem\Core\Router.php(61): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('')
+#4 {main}
+Url Error: /
+Thrown in 'C:\xampp\htdocs\EducationalSystem\App\Controllers\HomeController.php' on line 23
+
+[31-Aug-2021 14:23:07 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'ErrorException'
+Message : 'Undefined index: HTTP_REFERER'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\App\Controllers\HomeController.php(23): Core\Error::errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 23, Array)
+#1 [internal function]: App\Controllers\HomeController->index()
+#2 C:\xampp\htdocs\EducationalSystem\Core\Router.php(61): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('')
+#4 {main}
+Url Error: /
+Thrown in 'C:\xampp\htdocs\EducationalSystem\App\Controllers\HomeController.php' on line 23
+
+[31-Aug-2021 14:23:17 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'ErrorException'
+Message : 'Undefined index: HTTP_REFERER'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\App\Controllers\HomeController.php(23): Core\Error::errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 23, Array)
+#1 [internal function]: App\Controllers\HomeController->index()
+#2 C:\xampp\htdocs\EducationalSystem\Core\Router.php(61): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('')
+#4 {main}
+Url Error: /
+Thrown in 'C:\xampp\htdocs\EducationalSystem\App\Controllers\HomeController.php' on line 23
+
+[31-Aug-2021 14:23:28 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'ErrorException'
+Message : 'Undefined index: HTTP_REFERER'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\App\Controllers\HomeController.php(23): Core\Error::errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 23, Array)
+#1 [internal function]: App\Controllers\HomeController->index()
+#2 C:\xampp\htdocs\EducationalSystem\Core\Router.php(61): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('')
+#4 {main}
+Url Error: /
+Thrown in 'C:\xampp\htdocs\EducationalSystem\App\Controllers\HomeController.php' on line 23
+
+[31-Aug-2021 14:24:10 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'ErrorException'
+Message : 'Undefined index: HTTP_REFERER'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\App\Controllers\HomeController.php(23): Core\Error::errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 23, Array)
+#1 [internal function]: App\Controllers\HomeController->index()
+#2 C:\xampp\htdocs\EducationalSystem\Core\Router.php(61): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('')
+#4 {main}
+Url Error: /
+Thrown in 'C:\xampp\htdocs\EducationalSystem\App\Controllers\HomeController.php' on line 23
+
+[31-Aug-2021 14:31:05 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/font-awesome/css/font-awesome.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:31:05 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/css/bootstrap.min.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:31:05 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/css/animate.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:31:05 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/css/fonts.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:31:05 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/css/style.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:31:05 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/jquery-3.1.1.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:31:05 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/bootstrap.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:31:05 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/popper.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:31:05 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/plugins/slimscroll/jquery.slimscroll.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:31:05 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/plugins/metisMenu/jquery.metisMenu.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:31:06 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/inspinia.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:31:06 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/plugins/pace/pace.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:31:06 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/bootstrap.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:31:06 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/plugins/metisMenu/jquery.metisMenu.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:31:06 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/plugins/slimscroll/jquery.slimscroll.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:31:06 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/inspinia.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:31:06 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/plugins/pace/pace.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:31:23 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/css/animate.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:31:23 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/font-awesome/css/font-awesome.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:31:23 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/css/fonts.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:31:23 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/jquery-3.1.1.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:31:23 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/css/bootstrap.min.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:31:23 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/css/style.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:31:23 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/popper.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:31:23 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/plugins/pace/pace.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:31:23 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/bootstrap.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:31:23 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/plugins/slimscroll/jquery.slimscroll.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:31:23 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/inspinia.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:31:23 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/plugins/metisMenu/jquery.metisMenu.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:31:24 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/plugins/slimscroll/jquery.slimscroll.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:31:24 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/inspinia.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:31:24 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/plugins/pace/pace.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:31:26 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/jquery-3.1.1.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:31:26 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/css/bootstrap.min.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:31:26 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/css/animate.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:31:26 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/font-awesome/css/font-awesome.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:31:26 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/css/style.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:31:26 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/css/fonts.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:31:26 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/popper.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:31:27 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/plugins/pace/pace.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:31:27 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/popper.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:31:27 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/plugins/slimscroll/jquery.slimscroll.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:31:27 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/plugins/metisMenu/jquery.metisMenu.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:31:27 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/bootstrap.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:31:27 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/inspinia.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:31:28 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/jquery-3.1.1.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:31:28 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/css/animate.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:31:28 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/css/bootstrap.min.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:31:28 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/css/style.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:31:28 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/css/fonts.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:31:28 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/font-awesome/css/font-awesome.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:31:29 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/plugins/slimscroll/jquery.slimscroll.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:31:29 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/bootstrap.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:31:29 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/popper.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:31:29 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/inspinia.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:31:29 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/plugins/pace/pace.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:31:29 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/plugins/metisMenu/jquery.metisMenu.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:31:29 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/plugins/slimscroll/jquery.slimscroll.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:31:29 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/inspinia.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:31:30 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/plugins/pace/pace.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:32:00 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('teachers/add/re...')
+#1 {main}
+Url Error: /teachers/add/resources/css/bootstrap.min.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:32:00 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('teachers/add/re...')
+#1 {main}
+Url Error: /teachers/add/resources/css/fonts.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:32:00 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('teachers/add/re...')
+#1 {main}
+Url Error: /teachers/add/resources/js/bootstrap.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:32:02 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/css/bootstrap.min.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:32:03 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/font-awesome/css/font-awesome.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:32:03 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/popper.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:32:03 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/css/animate.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:32:03 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/css/style.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:32:03 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/css/fonts.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:32:03 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/jquery-3.1.1.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:32:03 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/bootstrap.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:32:03 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/plugins/slimscroll/jquery.slimscroll.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:32:03 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/plugins/metisMenu/jquery.metisMenu.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:32:03 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/popper.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:32:03 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/inspinia.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:32:03 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/plugins/pace/pace.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:32:04 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/bootstrap.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:32:04 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/plugins/metisMenu/jquery.metisMenu.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:32:04 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/plugins/slimscroll/jquery.slimscroll.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:32:04 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/inspinia.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:32:04 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/plugins/pace/pace.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:32:41 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/font-awesome/css/font-awesome.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:32:41 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/css/bootstrap.min.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:32:41 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/css/style.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:32:41 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/css/fonts.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:32:41 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/css/animate.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:32:41 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/jquery-3.1.1.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:32:42 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/popper.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:32:42 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/bootstrap.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:32:42 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/plugins/slimscroll/jquery.slimscroll.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:32:42 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/plugins/pace/pace.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:32:42 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/plugins/metisMenu/jquery.metisMenu.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:32:42 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/inspinia.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:32:42 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/inspinia.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:32:42 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/plugins/pace/pace.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:32:44 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/css/bootstrap.min.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:32:45 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/font-awesome/css/font-awesome.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:32:45 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/css/animate.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:32:45 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/css/style.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:32:45 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/jquery-3.1.1.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:32:45 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/css/fonts.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:32:45 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/plugins/metisMenu/jquery.metisMenu.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:32:45 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/bootstrap.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:32:45 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/popper.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:32:45 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/inspinia.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:32:45 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/plugins/slimscroll/jquery.slimscroll.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:32:45 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/plugins/pace/pace.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:32:45 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/plugins/metisMenu/jquery.metisMenu.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:32:46 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/plugins/slimscroll/jquery.slimscroll.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:32:46 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/inspinia.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:32:46 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/plugins/pace/pace.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:33:03 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/css/bootstrap.min.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:33:08 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/css/bootstrap.min.css/resources/css/bootstrap.min.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:33:08 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/css/bootstrap.min.css/resources/css/fonts.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:33:08 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/css/bootstrap.min.css/resources/js/bootstrap.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:34:05 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachersresourc...')
+#1 {main}
+Url Error: /Teachersresources/css/bootstrap.min.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:34:05 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachersresourc...')
+#1 {main}
+Url Error: /Teachersresources/css/animate.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:34:05 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachersresourc...')
+#1 {main}
+Url Error: /Teachersresources/css/style.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:34:05 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachersresourc...')
+#1 {main}
+Url Error: /Teachersresources/font-awesome/css/font-awesome.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:34:05 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachersresourc...')
+#1 {main}
+Url Error: /Teachersresources/css/fonts.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:34:05 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachersresourc...')
+#1 {main}
+Url Error: /Teachersresources/js/popper.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:34:05 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachersresourc...')
+#1 {main}
+Url Error: /Teachersresources/js/jquery-3.1.1.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:34:05 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachersresourc...')
+#1 {main}
+Url Error: /Teachersresources/js/plugins/metisMenu/jquery.metisMenu.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:34:05 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachersresourc...')
+#1 {main}
+Url Error: /Teachersresources/js/plugins/slimscroll/jquery.slimscroll.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:34:05 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachersresourc...')
+#1 {main}
+Url Error: /Teachersresources/js/bootstrap.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:34:06 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachersresourc...')
+#1 {main}
+Url Error: /Teachersresources/js/plugins/pace/pace.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:34:06 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachersresourc...')
+#1 {main}
+Url Error: /Teachersresources/js/inspinia.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:34:06 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachersresourc...')
+#1 {main}
+Url Error: /Teachersresources/js/popper.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:34:06 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachersresourc...')
+#1 {main}
+Url Error: /Teachersresources/js/bootstrap.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:34:07 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachersresourc...')
+#1 {main}
+Url Error: /Teachersresources/js/plugins/metisMenu/jquery.metisMenu.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:34:07 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachersresourc...')
+#1 {main}
+Url Error: /Teachersresources/js/plugins/slimscroll/jquery.slimscroll.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:34:07 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachersresourc...')
+#1 {main}
+Url Error: /Teachersresources/js/inspinia.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:34:07 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachersresourc...')
+#1 {main}
+Url Error: /Teachersresources/js/plugins/pace/pace.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:34:28 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Daysresources/j...')
+#1 {main}
+Url Error: /Daysresources/js/jquery-3.1.1.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:34:28 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Daysresources/f...')
+#1 {main}
+Url Error: /Daysresources/font-awesome/css/font-awesome.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:34:28 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Daysresources/c...')
+#1 {main}
+Url Error: /Daysresources/css/animate.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:34:28 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Daysresources/c...')
+#1 {main}
+Url Error: /Daysresources/css/style.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:34:28 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Daysresources/c...')
+#1 {main}
+Url Error: /Daysresources/css/fonts.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:34:29 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Daysresources/c...')
+#1 {main}
+Url Error: /Daysresources/css/bootstrap.min.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:34:29 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Daysresources/j...')
+#1 {main}
+Url Error: /Daysresources/js/popper.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:34:29 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Daysresources/j...')
+#1 {main}
+Url Error: /Daysresources/js/bootstrap.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:34:29 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Daysresources/j...')
+#1 {main}
+Url Error: /Daysresources/js/plugins/slimscroll/jquery.slimscroll.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:34:29 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Daysresources/j...')
+#1 {main}
+Url Error: /Daysresources/js/inspinia.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:34:29 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Daysresources/j...')
+#1 {main}
+Url Error: /Daysresources/js/plugins/pace/pace.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:34:29 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Daysresources/j...')
+#1 {main}
+Url Error: /Daysresources/js/plugins/metisMenu/jquery.metisMenu.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:34:30 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Daysresources/j...')
+#1 {main}
+Url Error: /Daysresources/js/plugins/slimscroll/jquery.slimscroll.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:34:30 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Daysresources/j...')
+#1 {main}
+Url Error: /Daysresources/js/inspinia.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:34:30 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Daysresources/j...')
+#1 {main}
+Url Error: /Daysresources/js/plugins/pace/pace.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:34:32 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachersresourc...')
+#1 {main}
+Url Error: /Teachersresources/js/plugins/slimscroll/jquery.slimscroll.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:34:33 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachersresourc...')
+#1 {main}
+Url Error: /Teachersresources/css/bootstrap.min.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:34:33 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachersresourc...')
+#1 {main}
+Url Error: /Teachersresources/css/animate.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:34:33 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachersresourc...')
+#1 {main}
+Url Error: /Teachersresources/css/style.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:34:33 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachersresourc...')
+#1 {main}
+Url Error: /Teachersresources/font-awesome/css/font-awesome.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:34:33 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachersresourc...')
+#1 {main}
+Url Error: /Teachersresources/css/fonts.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:34:33 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachersresourc...')
+#1 {main}
+Url Error: /Teachersresources/js/plugins/pace/pace.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:34:33 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachersresourc...')
+#1 {main}
+Url Error: /Teachersresources/js/popper.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:34:33 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachersresourc...')
+#1 {main}
+Url Error: /Teachersresources/js/jquery-3.1.1.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:34:34 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachersresourc...')
+#1 {main}
+Url Error: /Teachersresources/js/inspinia.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:34:34 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachersresourc...')
+#1 {main}
+Url Error: /Teachersresources/js/bootstrap.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:34:34 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachersresourc...')
+#1 {main}
+Url Error: /Teachersresources/js/plugins/metisMenu/jquery.metisMenu.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:34:34 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachersresourc...')
+#1 {main}
+Url Error: /Teachersresources/js/bootstrap.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:34:34 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachersresourc...')
+#1 {main}
+Url Error: /Teachersresources/js/plugins/metisMenu/jquery.metisMenu.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:34:34 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachersresourc...')
+#1 {main}
+Url Error: /Teachersresources/js/plugins/slimscroll/jquery.slimscroll.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:34:34 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachersresourc...')
+#1 {main}
+Url Error: /Teachersresources/js/inspinia.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:34:35 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachersresourc...')
+#1 {main}
+Url Error: /Teachersresources/js/plugins/pace/pace.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:34:58 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachersresourc...')
+#1 {main}
+Url Error: /Teachersresources/css/bootstrap.min.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:35:19 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachersresourc...')
+#1 {main}
+Url Error: /Teachersresources/css/bootstrap.min.css/resources/js/bootstrap.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:35:19 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachersresourc...')
+#1 {main}
+Url Error: /Teachersresources/css/bootstrap.min.css/resources/css/bootstrap.min.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:35:19 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachersresourc...')
+#1 {main}
+Url Error: /Teachersresources/css/bootstrap.min.css/resources/css/fonts.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:36:58 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachersresourc...')
+#1 {main}
+Url Error: /Teachersresources/css/animate.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:36:58 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachersresourc...')
+#1 {main}
+Url Error: /Teachersresources/css/style.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:36:58 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachersresourc...')
+#1 {main}
+Url Error: /Teachersresources/js/jquery-3.1.1.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:36:58 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachersresourc...')
+#1 {main}
+Url Error: /Teachersresources/font-awesome/css/font-awesome.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:36:58 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachersresourc...')
+#1 {main}
+Url Error: /Teachersresources/css/bootstrap.min.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:36:58 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachersresourc...')
+#1 {main}
+Url Error: /Teachersresources/css/fonts.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:36:58 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachersresourc...')
+#1 {main}
+Url Error: /Teachersresources/js/popper.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:36:58 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachersresourc...')
+#1 {main}
+Url Error: /Teachersresources/js/plugins/metisMenu/jquery.metisMenu.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:36:58 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachersresourc...')
+#1 {main}
+Url Error: /Teachersresources/js/plugins/slimscroll/jquery.slimscroll.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:36:58 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachersresourc...')
+#1 {main}
+Url Error: /Teachersresources/js/bootstrap.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:37:00 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachersresourc...')
+#1 {main}
+Url Error: /Teachersresources/js/plugins/pace/pace.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:37:00 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachersresourc...')
+#1 {main}
+Url Error: /Teachersresources/js/inspinia.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:37:04 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachersresourc...')
+#1 {main}
+Url Error: /Teachersresources/js/popper.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:37:05 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachersresourc...')
+#1 {main}
+Url Error: /Teachersresources/js/bootstrap.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:37:06 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachersresourc...')
+#1 {main}
+Url Error: /Teachersresources/js/plugins/metisMenu/jquery.metisMenu.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:37:06 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachersresourc...')
+#1 {main}
+Url Error: /Teachersresources/js/plugins/slimscroll/jquery.slimscroll.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:37:06 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachersresourc...')
+#1 {main}
+Url Error: /Teachersresources/js/inspinia.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:37:06 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachersresourc...')
+#1 {main}
+Url Error: /Teachersresources/js/plugins/pace/pace.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:38:13 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachersresourc...')
+#1 {main}
+Url Error: /Teachersresources/font-awesome/css/font-awesome.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:38:13 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachersresourc...')
+#1 {main}
+Url Error: /Teachersresources/js/popper.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:38:13 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachersresourc...')
+#1 {main}
+Url Error: /Teachersresources/css/style.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:38:13 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachersresourc...')
+#1 {main}
+Url Error: /Teachersresources/css/animate.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:38:13 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachersresourc...')
+#1 {main}
+Url Error: /Teachersresources/css/fonts.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:38:14 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachersresourc...')
+#1 {main}
+Url Error: /Teachersresources/js/jquery-3.1.1.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:38:14 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachersresourc...')
+#1 {main}
+Url Error: /Teachersresources/js/bootstrap.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:38:14 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachersresourc...')
+#1 {main}
+Url Error: /Teachersresources/js/plugins/metisMenu/jquery.metisMenu.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:38:14 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachersresourc...')
+#1 {main}
+Url Error: /Teachersresources/js/inspinia.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:38:14 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachersresourc...')
+#1 {main}
+Url Error: /Teachersresources/js/plugins/pace/pace.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:38:14 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachersresourc...')
+#1 {main}
+Url Error: /Teachersresources/js/plugins/slimscroll/jquery.slimscroll.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:38:15 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachersresourc...')
+#1 {main}
+Url Error: /Teachersresources/js/popper.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:38:15 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachersresourc...')
+#1 {main}
+Url Error: /Teachersresources/js/bootstrap.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:38:15 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachersresourc...')
+#1 {main}
+Url Error: /Teachersresources/js/plugins/metisMenu/jquery.metisMenu.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:38:15 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachersresourc...')
+#1 {main}
+Url Error: /Teachersresources/js/plugins/slimscroll/jquery.slimscroll.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:38:15 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachersresourc...')
+#1 {main}
+Url Error: /Teachersresources/js/inspinia.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:38:15 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachersresourc...')
+#1 {main}
+Url Error: /Teachersresources/js/plugins/pace/pace.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:39:31 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'ErrorException'
+Message : 'Undefined index: HTTPS'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\App\Controllers\MyController.php(24): Core\Error::errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 24, Array)
+#1 [internal function]: App\Controllers\MyController->Teachers()
+#2 C:\xampp\htdocs\EducationalSystem\Core\Router.php(61): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers')
+#4 {main}
+Url Error: /Teachers
+Thrown in 'C:\xampp\htdocs\EducationalSystem\App\Controllers\MyController.php' on line 24
+
+[31-Aug-2021 14:39:31 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/css/bootstrap.min.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:39:31 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/css/fonts.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:39:31 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/bootstrap.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:39:47 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'ErrorException'
+Message : 'Undefined index: HTTPS'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\App\Controllers\MyController.php(24): Core\Error::errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 24, Array)
+#1 [internal function]: App\Controllers\MyController->Teachers()
+#2 C:\xampp\htdocs\EducationalSystem\Core\Router.php(61): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers')
+#4 {main}
+Url Error: /Teachers
+Thrown in 'C:\xampp\htdocs\EducationalSystem\App\Controllers\MyController.php' on line 24
+
+[31-Aug-2021 14:39:48 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/css/bootstrap.min.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:39:48 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/css/fonts.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:39:48 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/bootstrap.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:40:00 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'ErrorException'
+Message : 'Undefined index: HTTPS'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\App\Controllers\MyController.php(16): Core\Error::errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 16, Array)
+#1 [internal function]: App\Controllers\MyController->Teachers()
+#2 C:\xampp\htdocs\EducationalSystem\Core\Router.php(61): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers')
+#4 {main}
+Url Error: /Teachers
+Thrown in 'C:\xampp\htdocs\EducationalSystem\App\Controllers\MyController.php' on line 16
+
+[31-Aug-2021 14:40:00 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/css/fonts.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:40:00 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/css/bootstrap.min.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:40:00 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/bootstrap.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:46:18 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'ErrorException'
+Message : 'Undefined index: REMOTE_HOST'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\App\Controllers\MyController.php(16): Core\Error::errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 16, Array)
+#1 [internal function]: App\Controllers\MyController->Teachers()
+#2 C:\xampp\htdocs\EducationalSystem\Core\Router.php(61): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers')
+#4 {main}
+Url Error: /Teachers
+Thrown in 'C:\xampp\htdocs\EducationalSystem\App\Controllers\MyController.php' on line 16
+
+[31-Aug-2021 14:46:18 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/css/bootstrap.min.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:46:18 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/css/fonts.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:46:18 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers/resour...')
+#1 {main}
+Url Error: /Teachers/resources/js/bootstrap.min.js
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:54:01 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('EducationalSyst...')
+#1 {main}
+Url Error: /EducationalSystem/Public/resources/css/bootstrap.min.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 14:59:19 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('56545')
+#1 {main}
+Url Error: /56545
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 15:50:15 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Error'
+Message : 'Undefined class constant 'MY_WEBSITE''
+Stack trace: #0 [internal function]: App\Controllers\MyController->Teachers()
+#1 C:\xampp\htdocs\EducationalSystem\Core\Router.php(61): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('Teachers')
+#3 {main}
+Url Error: /Teachers
+Thrown in 'C:\xampp\htdocs\EducationalSystem\App\Controllers\MyController.php' on line 17
+
+[31-Aug-2021 15:50:15 Asia/Tehran] PHP Fatal error:  Uncaught Symfony\Component\Debug\Exception\FatalThrowableError: Undefined class constant 'MY_WEBSITE' in C:\xampp\htdocs\EducationalSystem\Storage\views\949112f601a1a99541d70abe1f10f3963c67b398.php:2
+Stack trace:
+#0 C:\xampp\htdocs\EducationalSystem\vendor\illuminate\view\Engines\PhpEngine.php(43): include()
+#1 C:\xampp\htdocs\EducationalSystem\vendor\illuminate\view\Engines\CompilerEngine.php(59): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\xampp\\htdocs...', Array)
+#2 C:\xampp\htdocs\EducationalSystem\vendor\illuminate\view\View.php(142): Illuminate\View\Engines\CompilerEngine->get('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\EducationalSystem\vendor\illuminate\view\View.php(125): Illuminate\View\View->getContents()
+#4 C:\xampp\htdocs\EducationalSystem\vendor\illuminate\view\View.php(90): Illuminate\View\View->renderContents()
+#5 C:\xampp\htdocs\EducationalSystem\Storage\views\4657c329794f0c747fcd36ce3ee94dcd062f1509.php(24): Illuminate\View\View->render()
+#6 C:\xampp\htdocs\EducationalSystem\ in C:\xampp\htdocs\EducationalSystem\Storage\views\949112f601a1a99541d70abe1f10f3963c67b398.php on line 2
+[31-Aug-2021 16:12:10 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('assets/dist/css...')
+#1 {main}
+Url Error: /assets/dist/css/bootstrap.min.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 16:12:10 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('assets/brand/bo...')
+#1 {main}
+Url Error: /assets/brand/bootstrap-solid.svg
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 16:14:55 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('assets/dist/css...')
+#1 {main}
+Url Error: /assets/dist/css/bootstrap.min.css
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 16:14:55 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('assets/brand/bo...')
+#1 {main}
+Url Error: /assets/brand/bootstrap-solid.svg
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 16:59:16 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('resources/js/bo...')
+#1 {main}
+Url Error: /resources/js/bootstrap.min.js.map
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 16:59:17 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('resources/css/b...')
+#1 {main}
+Url Error: /resources/css/bootstrap.min.css.map
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 17:01:54 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('resources/js/bo...')
+#1 {main}
+Url Error: /resources/js/bootstrap.min.js.map
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 17:01:54 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Not Find Route!'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\Public\index.php(12): Core\Router->patches('resources/css/b...')
+#1 {main}
+Url Error: /resources/css/bootstrap.min.css.map
+Thrown in 'C:\xampp\htdocs\EducationalSystem\Core\Router.php' on line 71
+
+[31-Aug-2021 17:19:26 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'ErrorException'
+Message : 'Undefined variable: _SESSION'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\App\Controllers\HomeController.php(16): Core\Error::errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 16, Array)
+#1 [internal function]: App\Controllers\HomeController->index()
+#2 C:\xampp\htdocs\EducationalSystem\Core\Router.php(61): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\EducationalSystem\Public\index.php(23): Core\Router->patches('')
+#4 {main}
+Url Error: /
+Thrown in 'C:\xampp\htdocs\EducationalSystem\App\Controllers\HomeController.php' on line 16
+
+[31-Aug-2021 17:19:29 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'ErrorException'
+Message : 'Undefined variable: _SESSION'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\App\Controllers\HomeController.php(16): Core\Error::errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 16, Array)
+#1 [internal function]: App\Controllers\HomeController->index()
+#2 C:\xampp\htdocs\EducationalSystem\Core\Router.php(61): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\EducationalSystem\Public\index.php(23): Core\Router->patches('')
+#4 {main}
+Url Error: /
+Thrown in 'C:\xampp\htdocs\EducationalSystem\App\Controllers\HomeController.php' on line 16
+
+[31-Aug-2021 17:19:31 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'ErrorException'
+Message : 'Undefined variable: _SESSION'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\App\Controllers\HomeController.php(16): Core\Error::errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 16, Array)
+#1 [internal function]: App\Controllers\HomeController->index()
+#2 C:\xampp\htdocs\EducationalSystem\Core\Router.php(61): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\EducationalSystem\Public\index.php(23): Core\Router->patches('')
+#4 {main}
+Url Error: /
+Thrown in 'C:\xampp\htdocs\EducationalSystem\App\Controllers\HomeController.php' on line 16
+
+[31-Aug-2021 17:19:33 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'ErrorException'
+Message : 'Undefined variable: _SESSION'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\App\Controllers\HomeController.php(16): Core\Error::errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 16, Array)
+#1 [internal function]: App\Controllers\HomeController->index()
+#2 C:\xampp\htdocs\EducationalSystem\Core\Router.php(61): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\EducationalSystem\Public\index.php(23): Core\Router->patches('')
+#4 {main}
+Url Error: /
+Thrown in 'C:\xampp\htdocs\EducationalSystem\App\Controllers\HomeController.php' on line 16
+
+[31-Aug-2021 17:22:14 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'ErrorException'
+Message : 'Undefined variable: _SESSION'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\App\Controllers\HomeController.php(16): Core\Error::errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 16, Array)
+#1 [internal function]: App\Controllers\HomeController->index()
+#2 C:\xampp\htdocs\EducationalSystem\Core\Router.php(61): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\EducationalSystem\Public\index.php(23): Core\Router->patches('')
+#4 {main}
+Url Error: /
+Thrown in 'C:\xampp\htdocs\EducationalSystem\App\Controllers\HomeController.php' on line 16
+
+[31-Aug-2021 17:22:25 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'ErrorException'
+Message : 'Undefined variable: _SESSION'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\App\Controllers\HomeController.php(16): Core\Error::errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 16, Array)
+#1 [internal function]: App\Controllers\HomeController->index()
+#2 C:\xampp\htdocs\EducationalSystem\Core\Router.php(61): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\EducationalSystem\Public\index.php(23): Core\Router->patches('')
+#4 {main}
+Url Error: /
+Thrown in 'C:\xampp\htdocs\EducationalSystem\App\Controllers\HomeController.php' on line 16
+
+[31-Aug-2021 17:22:39 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'ErrorException'
+Message : 'Undefined variable: _SESSION'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\App\Controllers\HomeController.php(16): Core\Error::errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 16, Array)
+#1 [internal function]: App\Controllers\HomeController->index()
+#2 C:\xampp\htdocs\EducationalSystem\Core\Router.php(61): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\EducationalSystem\Public\index.php(23): Core\Router->patches('')
+#4 {main}
+Url Error: /
+Thrown in 'C:\xampp\htdocs\EducationalSystem\App\Controllers\HomeController.php' on line 16
+
+[31-Aug-2021 17:22:40 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'ErrorException'
+Message : 'Undefined variable: _SESSION'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\App\Controllers\HomeController.php(16): Core\Error::errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 16, Array)
+#1 [internal function]: App\Controllers\HomeController->index()
+#2 C:\xampp\htdocs\EducationalSystem\Core\Router.php(61): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\EducationalSystem\Public\index.php(23): Core\Router->patches('')
+#4 {main}
+Url Error: /
+Thrown in 'C:\xampp\htdocs\EducationalSystem\App\Controllers\HomeController.php' on line 16
+
+[31-Aug-2021 17:23:40 Asia/Tehran] 
+Fatal error
+Uncaught exception: 'ErrorException'
+Message : 'Undefined variable: _SESSION'
+Stack trace: #0 C:\xampp\htdocs\EducationalSystem\App\Controllers\HomeController.php(16): Core\Error::errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 16, Array)
+#1 [internal function]: App\Controllers\HomeController->index()
+#2 C:\xampp\htdocs\EducationalSystem\Core\Router.php(61): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\EducationalSystem\Public\index.php(23): Core\Router->patches('')
+#4 {main}
+Url Error: /
+Thrown in 'C:\xampp\htdocs\EducationalSystem\App\Controllers\HomeController.php' on line 16
+
