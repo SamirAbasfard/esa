@@ -1,6 +1,6 @@
 <?php
 
-$router = new  \Core\Router();
+$router = new  \Core\Router() ;
 
 $router->add("/", "HomeController@index");
 $router->add("/student/delete", "HomeController@studentdelete");
